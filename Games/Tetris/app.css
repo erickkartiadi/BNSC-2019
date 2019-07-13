@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:100,300,400,500,700,900&display=swap");
+body {
+  /* background-color: #011826; */
+  margin: 0;
+  font-family: Karla;
+  color: white;
+}
+.wrapper {
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+canvas#canvas {
+  border: 1px solid black;
+}
+.leaderboard {
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.score-container {
+  background-color: blue;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#highScore {
+  background-color: blueviolet;
+  flex-grow: 9;
+}
+.menu {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  display: none;
+  transition: all 0.3s;
+}
+.menu button {
+  border: none;
+  background-color: midnightblue;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+ol {
+  font-size: 1.25rem;
+}

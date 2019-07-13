@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:100,300,400,500,700,900&display=swap");
+
+:root {
+  --bg-red: #f21326;
+  --bg-yellow: #ecf22e;
+  --bg-orange: #f28b0c;
+  --bg-tosca: #0ff2db;
+  --bg-light-blue: #04adbf;
+  --bg-blue: #0388a6;
+  --bg-medium-blue: #024959;
+  --bg-dark-blue: #1d3c40;
+  --bg-black-blue: #011826;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+#scrollSpy {
+  padding: 0px;
+}
+.nav {
+  background-color: var(--bg-black-blue);
+  min-height: 100vh;
+  position: fixed;
+  padding: 0px;
+  width: 8.333%;
+}
+.main {
+  padding: 0;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: var(--bg-red);
+}
+.nav-pills .nav-link {
+  border-radius: 0;
+}
+#logo-circle {
+  box-sizing: border-box;
+  padding: 35% 20%;
+}
+.nav-item > .nav-link {
+  padding: 16px;
+}
+.nav-item > .nav-link > .img-fluid {
+  height: 75%;
+  width: 75%;
+}
+a[href="form-login.html"] {
+  background-color: var(--bg-red);
+  color: white;
+}
+#social-media-container {
+  background-color: var(--bg-orange);
+}
+#social-media-container h1 {
+  font-size: 2rem;
+}
+a.icon {
+  font-size: 3.5rem;
+  transition: all 0.3s;
+}
+a.icon:nth-child(1) {
+  color: #3b5998;
+}
+a.icon:nth-child(2) {
+  color: #00acee;
+}
+a.icon:nth-child(3) {
+  color: #3f729b;
+}
+a.icon:nth-child(4) {
+  color: #c8232c;
+}
+a.icon:nth-child(5) {
+  color: #cc3333;
+}
+a.icon:hover {
+  color: var(--bg-dark-blue);
+}
+footer {
+  color: white;
+  background-color: var(--bg-dark-blue);
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+form {
+  background-color: white;
+  width: 25%;
+  margin: 200px auto;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.form-control {
+  border-radius: 0;
+}
+input[type="submit"] {
+  background-color: var(--bg-dark-blue);
+  border-radius: 0 !important;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .nav {
+    min-height: 100%;
+  }
+  #logo-circle {
+    box-sizing: border-box;
+    padding: 30% 15%;
+  }
+  .nav-item > .nav-link {
+    padding: 8px;
+  }
+  .nav-item > .nav-link > .img-fluid {
+    height: 100%;
+    width: 100%;
+  }
+  a[href="form-login.html"] {
+    background-color: var(--bg-red);
+    color: white;
+    font-size: 0.75rem;
+  }
+  a[href="form-login.html"] > i {
+    display: none;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  form {
+    background-color: white;
+    width: 50%;
+    margin: 200px auto;
+    padding: 15px;
+  }
+  #social-media-container h1 {
+    font-size: 1.5rem;
+  }
+  a.icon {
+    font-size: 2.5rem;
+    transition: all 0.3s;
+  }
+  .social-media > div.px-5.w-50 {
+    width: 70% !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  #scrollSpy {
+    display: none;
+  }
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  form {
+    background-color: white;
+    width: 90%;
+    margin: 50px auto;
+    padding: 15px;
+  }
+  #social-media-container h1 {
+    font-size: 1rem;
+  }
+  a.icon {
+    font-size: 2rem;
+    transition: all 0.3s;
+  }
+  .social-media > div.px-5.w-50 {
+    width: auto !important;
+  }
+  .g-recaptcha {
+    display: none;
+  }
+}

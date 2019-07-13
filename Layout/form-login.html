@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Indonesia Game Portal | Login</title>
+    <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/form.css" />
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </head>
+  <body class="bg-light">
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-sm-1" id="scrollSpy">
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item p-m-4 p-sm-2">
+              <div id="logo-circle" class="rounded-circle bg-white">
+                <img
+                  class="img-fluid"
+                  src="images/Indonesia Game Portal Logo.png"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="index.html#section1"
+                ><img class="img-fluid" src="images/gallery/picture.png" alt=""
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="index.html#section2"
+                ><img class="img-fluid" src="images/gallery/about.png" alt=""
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="index.html#section3"
+                ><img
+                  class="img-fluid"
+                  src="images/gallery/game-controller.png"
+                  alt=""
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center" href="#section4"
+                ><img class="img-fluid" src="images/gallery/user.png" alt=""
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a href="form-login.html" class="nav-link text-center btn "
+                ><i class="fas fa-sign-in-alt"></i> Sign In</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="main col-sm-11 col-12">
+          <form action="index.html">
+            <h1 class="title text-center my-3">Login</h1>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email address..."
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="email"
+                placeholder="Enter your password..."
+              />
+            </div>
+            <div class="form-group">
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LesU60UAAAAADSbluRNldmRU09yr07XnpdJ5dUJ"
+              ></div>
+            </div>
+
+            <input type="submit" class="btn btn-block" />
+            <div class="form-group py-2">
+              <span class="text-center d-block"
+                >Don't have an account?<a
+                  href="form-register.html"
+                  class=" btn-link"
+                >
+                  Register Now</a
+                ></span
+              >
+            </div>
+          </form>
+          <div id="social-media-container" class="py-5 container-fluid">
+            <div class="container">
+              <h1 class="title text-center pb-1">
+                GET SOCIAL WITH US
+              </h1>
+              <div class="social-media ">
+                <div
+                  class="px-5 w-50 py-2 mx-auto d-flex justify-content-between"
+                >
+                  <a href="" class="icon"><i class="fab fa-facebook"></i></a>
+                  <a href="" class="icon"><i class="fab fa-twitter"></i></a>
+                  <a href="" class="icon"><i class="fab fa-instagram"></i></a>
+                  <a href="" class="icon"><i class="fab fa-pinterest"></i></a>
+                  <a href="" class="icon"><i class="fab fa-google-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="py-3">
+            <p class="p-0 m-0 text-center text-uppercase">
+              designed by : erick © 2019
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,332 @@
+/* colors */
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:100,300,400,500,700,900&display=swap");
+
+:root {
+  --bg-red: #f21326;
+  --bg-yellow: #ecf22e;
+  --bg-orange: #f28b0c;
+  --bg-tosca: #0ff2db;
+  --bg-light-blue: #04adbf;
+  --bg-blue: #0388a6;
+  --bg-medium-blue: #024959;
+  --bg-dark-blue: #1d3c40;
+  --bg-black-blue: #011826;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+#scrollSpy {
+  padding: 0px;
+}
+.nav {
+  background-color: var(--bg-black-blue);
+  min-height: 100vh;
+  position: fixed;
+  padding: 0px;
+  width: 8.333%;
+}
+.main {
+  padding: 0;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: var(--bg-red);
+}
+.nav-pills .nav-link {
+  border-radius: 0;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  cursor: default;
+}
+#header,
+#section1,
+#section2,
+#section3,
+#section4 {
+  padding: 0;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 20px;
+  right: 20%;
+  left: 5%;
+  z-index: 10;
+  padding: 20px 400px 20px 0;
+  color: #fff;
+  text-align: left;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.font-bookman {
+  font-family: "Roboto", sans-serif;
+}
+.carousel-caption .container p {
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+
+.myButton {
+  background-color: var(--bg-dark-blue);
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 0;
+  transition: all 0.3s;
+}
+.myButton:hover {
+  background-color: var(--bg-red);
+  color: white;
+}
+
+#imgGallery > .col-7 > .row > .col-4 > img:hover {
+  opacity: 0.7;
+  transition: ease-out 0.3s;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+#view-more {
+  color: var(--bg-red);
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: bold;
+}
+#section2 {
+  background-color: var(--bg-dark-blue);
+}
+.text {
+  color: white;
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+.game-name {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+}
+.menu {
+  background-color: var(--bg-red);
+}
+.start-button {
+  background-color: var(--bg-dark-blue);
+  color: white;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.start-button:hover {
+  background-color: var(--bg-light-blue);
+  color: white;
+}
+#social-media-container {
+  background-color: var(--bg-orange);
+}
+#social-media-container h1 {
+  font-size: 2rem;
+}
+a.icon {
+  font-size: 3.5rem;
+  transition: all 0.3s;
+}
+a.icon:nth-child(1) {
+  color: #3b5998;
+}
+a.icon:nth-child(2) {
+  color: #00acee;
+}
+a.icon:nth-child(3) {
+  color: #3f729b;
+}
+a.icon:nth-child(4) {
+  color: #c8232c;
+}
+a.icon:nth-child(5) {
+  color: #cc3333;
+}
+a.icon:hover {
+  color: var(--bg-dark-blue);
+}
+footer {
+  color: white;
+  background-color: var(--bg-dark-blue);
+}
+#logo-circle {
+  box-sizing: border-box;
+  padding: 35% 20%;
+}
+.nav-item > .nav-link {
+  padding: 16px;
+}
+.nav-item > .nav-link > .img-fluid {
+  height: 75%;
+  width: 75%;
+}
+a[href="form-login.html"] {
+  background-color: var(--bg-red);
+  color: white;
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .nav {
+    min-height: 100%;
+  }
+  .carousel-item > img.w-100 {
+    height: 100%;
+    width: auto !important;
+  }
+  #logo-circle {
+    box-sizing: border-box;
+    padding: 30% 15%;
+  }
+  .nav-item > .nav-link {
+    padding: 8px;
+  }
+  .nav-item > .nav-link > .img-fluid {
+    height: 100%;
+    width: 100%;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 20px;
+    right: 20%;
+    left: 5%;
+    z-index: 10;
+    padding: 20px 100px 20px 0;
+    color: #fff;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  .text {
+    color: white;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+  }
+  #section3 > .row > div > .w-100 > .img-fluid {
+    width: 100%;
+  }
+  .game-name {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+  }
+  #social-media-container h1 {
+    font-size: 1.5rem;
+  }
+  a.icon {
+    font-size: 2.5rem;
+    transition: all 0.3s;
+  }
+  .social-media > div.px-5.w-50 {
+    width: 70% !important;
+  }
+  a[href="form-login.html"] {
+    background-color: var(--bg-red);
+    color: white;
+    font-size: 0.75rem;
+  }
+  a[href="form-login.html"] > i {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  #scrollSpy {
+    display: none;
+  }
+  .carousel-item > img.w-100 {
+    height: 50%;
+    width: AUTO !important;
+  }
+  .nav-item > .nav-link > .img-fluid {
+    height: 100%;
+    width: 100%;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 20px;
+    right: 20%;
+    left: 5%;
+    z-index: 10;
+    padding: 0;
+    color: #fff;
+    text-align: left;
+  }
+  .carousel-caption .container p {
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+  .myButton {
+    font-size: 1rem;
+  }
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .text {
+    color: white;
+    font-size: 0.75rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+  }
+  #imgGallery {
+    box-sizing: border-box;
+    padding: 0;
+  }
+  #imgGallery > div {
+    padding: 0;
+  }
+  #section3 > .row > div > .w-100 > .img-fluid {
+    width: 100%;
+  }
+  #section3 > .row > div {
+    padding: 0;
+    height: 400px;
+  }
+  .game-name {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: white;
+    margin-left: 15px;
+  }
+  #social-media-container h1 {
+    font-size: 1rem;
+  }
+  a.icon {
+    font-size: 2rem;
+    transition: all 0.3s;
+  }
+  .social-media > div.px-5.w-50 {
+    width: auto !important;
+  }
+}
